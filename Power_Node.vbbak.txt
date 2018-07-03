@@ -1,0 +1,27 @@
+!!!!    2    0    1 1274062712  Vc000                                         
+
+test powered analog
+
+     test "fuck"
+     test "bao"
+
+end test
+
+!=====================================================================
+
+subtest "fuck"
+   disconnect all
+   connect i to nodes"FUCK"
+   connect l to ground
+   detector dcv , expect 2
+   measure 2*1.1,2*0.9
+end subtest
+
+subtest "bao"
+   disconnect all
+   connect i to nodes"BAO"
+   connect l to ground
+   detector dcv , expect 3
+   measure 3*1.1,3*0.9
+end subtest
+

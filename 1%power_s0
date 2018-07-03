@@ -1,0 +1,182 @@
+!!!!    2    0    1 1274062712  Vc000                                         
+
+test powered analog
+   test "TPS51116_REF"
+   test "+0_75V_DDR_VTT"
+   test "+1_5V_SUS"
+ !?test "+3_3V_LAN"
+ !?test "EVDD10"      !+1_05V_LOM
+   test "+LCDVDD"
+   test "+5V_USB1"
+   test "+5V_USB2"
+   test "+1_05V_PCH"
+   test "+3_3V_RUN"
+   test "+5V_RUN"
+   test "+1_8V_RUN"
+   test "+1_5V_CPU"
+   test "+1_5V_RUN"
+   test "RUNPWROK"
+   test "+1_05V_VTT"
+   test "+CPU_GFXCORE"
+   test "+VCC_CORE"
+end test
+
+!=========================
+
+subtest "EVDD10"
+   disconnect all
+   connect i to nodes "#%EVDD10"
+   connect l to ground
+   detector dcv , expect 1.05
+   measure 1.05*1.1,1.05*0.9
+end subtest
+
+ subtest "+LCDVDD"
+    disconnect all
+    connect s to nodes "#%ENVDD_D"
+    connect i to nodes "#%+LCDVDD"
+    connect l to ground
+    source dcv,amplitude 3.3 ,on ,ico1
+    detector dcv , expect 5
+    wait 100m
+    measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "+3_3V_LAN"
+   disconnect all
+   connect s to nodes "#%PM_LAN_ENABLE_R"
+   connect i to nodes "#%+3_3V_LAN"
+   connect l to ground
+   source dcv,amplitude 0 ,on ,ico1
+   detector dcv , expect 3.3
+   wait 20m
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "+1_5V_CPU"
+   disconnect all
+   connect i to nodes "#%+1_5V_CPU"
+   connect l to ground
+   detector dcv , expect 1.5
+   measure 1.5*1.1,1.5*0.9
+end subtest
+
+subtest "+1_5V_RUN"
+   disconnect all
+   connect i to nodes "#%+1_5V_RUN"
+   connect l to ground
+   detector dcv , expect 1.5
+   measure 1.5*1.1,1.5*0.9
+end subtest
+
+subtest "+1_8V_RUN"
+   disconnect all
+   connect i to nodes "#%+1_8V_RUN"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "TPS51116_REF"
+   disconnect all
+   connect i to nodes "#%TPS51116_REF"
+   connect l to ground
+   detector dcv , expect 0.75
+   measure 0.75*1.1,0.75*0.9
+end subtest
+
+subtest "+0_75V_DDR_VTT"
+   disconnect all
+   connect i to nodes "#%+0_75V_DDR_VTT"
+   connect l to ground
+   detector dcv , expect 0.75
+   measure 0.75*1.1,0.75*0.9
+end subtest
+
+subtest "+1_5V_SUS"
+   disconnect all
+   connect i to nodes "#%+1_5V_SUS"
+   connect l to ground
+   detector dcv , expect 1.5
+   measure 1.5*1.1,1.5*0.9
+end subtest
+
+subtest "+1_05V_PCH"
+   disconnect all
+   connect i to nodes "#%+1_05V_PCH"
+   connect l to ground
+   detector dcv , expect 5
+   measure 1.05*1.1,1.05*0.9
+end subtest
+
+subtest "+5V_USB1"
+   disconnect all
+   connect i to nodes "#%+5V_USB1"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1, 5*0.9
+end subtest
+
+ subtest "+5V_USB2"
+   disconnect all
+   connect i to nodes "#%+5V_USB2"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1, 5*0.9
+end subtest
+
+subtest "+3_3V_RUN"
+   disconnect all
+   connect i to nodes "#%+3_3V_RUN"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1, 3.3*0.9
+end subtest
+
+ subtest "+5V_RUN"
+   disconnect all
+   connect i to nodes "#%+5V_RUN"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1, 5*0.9
+end subtest
+
+subtest "RUNPWROK"
+   disconnect all
+   connect i to nodes "#%RUNPWROK"
+   connect l to ground
+   detector dcv , expect 4
+   measure 3.30*1.1, 3.30*0.9
+end subtest
+
+
+subtest "+1_05V_VTT"
+   disconnect all
+   connect i to nodes "#%+1_05V_VTT"
+   connect l to ground
+   detector dcv , expect 2
+   measure 1.05*1.1, 1.05*0.9
+end subtest
+
+subtest "+CPU_GFXCORE"
+   disconnect all
+!  connect s to nodes "#%3211_GFX_VR_EN"
+   connect i to nodes "#%+CPU_GFXCORE"
+   connect l to ground
+   detector dcv , expect 0.89
+!  source dcv ,amplitude 1.5 ,on ,ico1
+! wait 200m
+   measure 0.89*1.1,0.89*0.9
+end subtest
+
+subtest "+VCC_CORE"
+   disconnect all
+   connect s to nodes "#%8152B_VRON"
+   connect i to nodes "#%+VCC_CORE"
+   connect l to ground
+   source dcv ,amplitude 3.3 ,on ,ico1
+   detector dcv , expect 1
+   wait 100m
+   measure 1, 0.7
+end subtest
+
