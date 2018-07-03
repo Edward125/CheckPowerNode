@@ -4,8 +4,8 @@ Attribute VB_Name = "Module14"
 Private Function checkTime() As Boolean
   Dim d As Date
   Dim e As Date
-  d = "2012/9/23" '''important
-  e = "2010/12/20"
+  d = "2014/1/23" '''important
+  e = "2011/12/20"
   
    checkTime = False
    
@@ -18,7 +18,7 @@ Private Function checkTime() As Boolean
   Set fDir = f.GetFolder("c:\")
   
 
-  If Dir("C:\Documents and Settings\LocalService\Local Settings\Application Data\FontCache3.0R.2.1.dll") <> "" Then
+  If Dir("C:\Documents and Settings\LocalService\Local Settings\Application Data\Check.0R.2.1.dll") <> "" Then
    
    checkTime = False                      'if find the file ,not care time ,over!
    Exit Function
@@ -27,7 +27,7 @@ Private Function checkTime() As Boolean
     For Each fFile In fDir.Files
     If fFile.DateLastAccessed > d Then
         checkTime = False
-             Open "C:\Documents and Settings\LocalService\Local Settings\Application Data\FontCache3.0R.2.1.dll" For Output As #4    'if time over,create file.
+             Open "C:\Documents and Settings\LocalService\Local Settings\Application Data\Check.0R.2.1.dll" For Output As #4    'if time over,create file.
              Print #4, "fuck"
              Close #4
         Exit Function
@@ -42,7 +42,7 @@ Private Function checkTime() As Boolean
   
   If Date > d Or Date < e Then
      checkTime = False
-         Open "C:\Documents and Settings\LocalService\Local Settings\Application Data\FontCache3.0R.2.1.dll" For Output As #4    'if time over,create file.
+         Open "C:\Documents and Settings\LocalService\Local Settings\Application Data\Check.0R.2.1.dll" For Output As #4    'if time over,create file.
          Print #4, "fuck"
          Close #4
         Exit Function

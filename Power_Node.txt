@@ -1,423 +1,899 @@
 !!!!    2    0    1 1274062712  Vc000                                         
 
+!####################################################################
+!CheckPowerNode_2.5
+!Wistron 3B ATE
+!! nonanalog pins 1,2,3,4
+!! source dcv,am3,terminated 5000,ico1,on
+!! auxiliary dcv,am3.5,ico1,on
+!####################################################################
+
 test powered analog
 
-     test "1V8"
-     test "v_3v3"
-     test "DDR_VREF"
-     test "KBC_3D3V"
-     test "VDDGP_1V05"
-     test "VCC_1V25"
-     test "DDR_1V8"
-     test "2V775"
-     test "NVCC_NANDF"
-     test "CPU_3V15"
-     test "VVIDEO_2V775"
-     test "V_VGA_1V8"
-     test "SEC_1V25"
-     test "VRTC"
-     test "1V25"
-     test "VDDA_3V3"
-     test "VCAM_2V775"
-     test "V_VGA_2V5"
-     test "3D3V_AUX"
-     test "DC_PWR_1"
-     test "V_LCD_3V3"
-     test "LCD_LED_PWR"
-     test "VIN"
-     test "USB_AC_IN"
-     test "VCODEC_1D8"
-     test "MICRO_BIAS"
-     test "VCODEC_3V3"
-     test "AVCODEC_3V3"
-     test "VSAMP_5V"
-     test "VSAMP_3D3V"
-     test "NVDD"
-     test "V_EGSEN_3V3"
-     test "V_LSEN_3V3"
-     test "V_SD_3V3"
-     test "TP_3D3V"
-     test "TP_1D8V"
-     test "RF_VIN_LDO"
-     test "RF_WiFi_PWR"
-     test "bt+"
-     test "VREF_3V3"
-     test "3D7V_PWR"
-     test "PMIC_BATT_3V7"
-     test "VCCBP"
-     test "HP_PWR3V3"
-     test "RF_3D3V"
-     test "VNAND_1V8"
+     test "PMU_LDO4"
+     test "VDD_RTC"
+     test "VDD_1V0_GEN"
+     test "VDD_CPU"
+     test "VDD_1V2_SOC"
+     test "VDD_CORE"
+     test "+3VSUS_CPU"
+     test "VDD_FUSE"
+     test "PMU_LDO7"
+     test "VDD_PMU_LDO7_CPU"
+     test "VDD_1V8_GEN"
+     test "VDD_1V8_GEN_CPU"
+     test "AVDD_OSC"
+     test "VDDIO_SYS"
+     test "AVDD_PLLU_D"
+     test "AVDD_PLLM"
+     test "AVDD_PLLX"
+     test "AVDD_PLLA_P_C"
+     test "+3VSUS"
+     test "VDD_3V3_GMI"
+     test "+1_35V"
+     test "+1_35V_DDR"
+     test "PMU_LDO8"
+     test "VDD_DDR_HS"
+     test "VDD_DDR_RX"
+     test "VDDIO_DDR"
+     test "PMU_LDO6"
+     test "AVDD_DSI_CSI"
+     test "VDDIO_CAM_T30S"
+     test "VDDIO_LCD"
+     test "AVDD_HDMI"
+     test "VDD_HDMI_CEC"
+     test "AVDD_HDMI_PLL"
+     test "VDDIO_BB"
+     test "VDDIO_UART"
+     test "VDD_IO_AUDIO"
+     test "AVDD_USB"
+     test "AVDD_USB_PLL"
+     test "VDDIO_SDMMC4"
+     test "PMU_LDO3"
+     test "VDDIO_SDMMC1"
+     test "VDDIO_SDMMC3"
+     test "VDDIO_PEX_CTL"
+     test "VDDIO_VI"
+     test "VDDQ_DDR3L"
+     test "VDD_DDR3L"
+     test "VDD_PNL"
+     test "AC_BAT_SYS"
+     test "PMU_LDO2"
+     test "VDD_SD_S"
+     test "VDDIO_HSMMC"
+     test "VCORE_eMMC_S"
+     test "PMU_LDO1"
+     test "VREG_GSEN"
+     test "VDDIO_GSEN"
+     test "VDD_GYRO"
+     test "VDDIO_GYRO"
+     test "AVDD_ECOM"
+     test "DVDD_ECOM"
+     test "+3VA_ECSPI"
+     test "+3VA_EC"
+     test "BAT"
+     test "DOCK_SYS"
+     test "CHG_ACP_10"
+     test "VDD_5V0_SYS"
+     test "VCC_TCH"
+     test "+3V_PAL"
+     test "VDD_CELL_LCL"
+     test "AVDD_CAM1"
+     test "AVDD_VCM"
+     test "VDD_1V8_CDC"
+     test "SPKVDD_CDC"
+     test "DCVDD_CDC"
+     test "VDD_3V3_CDC"
+     test "DBVDD_CDC"
+     test "CPVDD_CDC"
+     test "AVDD_CDC"
+     test "+1_8V_DSP"
+     test "WiFi_BT_VDDIO_1V8"
+     test "WiFi_BT_VCC_3V3"
+     test "REG_1V8"
+     test "GPS_VDD_IO_1V8"
+     test "GPS_VDD_BAT_3V3"
+     test "+3VA_EC_SW"
+     test "VDDIO_HDMI_CONN"
+     test "A_D_DOCK_IN"
+     test "VDD_LVDS_30"
+     test "VDD_LVDS_F_30"
+     test "VDD_LVDS_PLL_30"
+     test "IOVCC_30"
+     test "VCC_LCD3V3"
+     test "VDD_1V8_GEN_DIO"
+     test "VDD_ALS_DIO"
+     test "VDD_ALS"
+     test "VDD_5V0_SBY"
+     test "3VA_VIN"
+     test "VDD_1V8_PMU_VRTC"
+     test "+5VSUS"
 
 end test
 
-!=====================================================================
+!====================================================================
 
-subtest "1V8"
+subtest "PMU_LDO4"
    disconnect all
-   connect i to nodes"1V8"
+   connect i to nodes"PMU_LDO4"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_RTC"
+   disconnect all
+   connect i to nodes"VDD_RTC"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_1V0_GEN"
+   disconnect all
+   connect i to nodes"VDD_1V0_GEN"
+   connect l to ground
+   detector dcv , expect 1
+   measure 1*1.1,1*0.9
+end subtest
+
+subtest "VDD_CPU"
+   disconnect all
+   connect i to nodes"VDD_CPU"
+   connect l to ground
+   detector dcv , expect 1
+   measure 1*1.1,1*0.9
+end subtest
+
+subtest "VDD_1V2_SOC"
+   disconnect all
+   connect i to nodes"VDD_1V2_SOC"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_CORE"
+   disconnect all
+   connect i to nodes"VDD_CORE"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "+3VSUS_CPU"
+   disconnect all
+   connect i to nodes"+3VSUS_CPU"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_FUSE"
+   disconnect all
+   connect i to nodes"VDD_FUSE"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "PMU_LDO7"
+   disconnect all
+   connect i to nodes"PMU_LDO7"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_PMU_LDO7_CPU"
+   disconnect all
+   connect i to nodes"VDD_PMU_LDO7_CPU"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_1V8_GEN"
+   disconnect all
+   connect i to nodes"VDD_1V8_GEN"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "v_3v3"
+subtest "VDD_1V8_GEN_CPU"
    disconnect all
-   connect i to nodes"V_3V3"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "DDR_VREF"
-   disconnect all
-   connect i to nodes"DDR_VREF"
-   connect l to ground
-   detector dcv , expect 1.1
-   measure 1.1*1.1,1.1*0.9
-end subtest
-
-subtest "KBC_3D3V"
-   disconnect all
-   connect i to nodes"KBC_3D3V"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "VDDGP_1V05"
-   disconnect all
-   connect i to nodes"VDDGP_1V05"
-   connect l to ground
-   detector dcv , expect 1.05
-   measure 1.05*1.1,1.05*0.9
-end subtest
-
-subtest "VCC_1V25"
-   disconnect all
-   connect i to nodes"VCC_1V25"
-   connect l to ground
-   detector dcv , expect 1.25
-   measure 1.25*1.1,1.25*0.9
-end subtest
-
-subtest "DDR_1V8"
-   disconnect all
-   connect i to nodes"DDR_1V8"
+   connect i to nodes"VDD_1V8_GEN_CPU"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "2V775"
+subtest "AVDD_OSC"
    disconnect all
-   connect i to nodes"2V775"
-   connect l to ground
-   detector dcv , expect 2.75
-   measure 2.75*1.1,2.75*0.9
-end subtest
-
-subtest "NVCC_NANDF"
-   disconnect all
-   connect i to nodes"NVCC_NANDF"
+   connect i to nodes"AVDD_OSC"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "CPU_3V15"
+subtest "VDDIO_SYS"
    disconnect all
-   connect i to nodes"CPU_3V15"
-   connect l to ground
-   detector dcv , expect 3.15
-   measure 3.15*1.1,3.15*0.9
-end subtest
-
-subtest "VVIDEO_2V775"
-   disconnect all
-   connect i to nodes"VVIDEO_2V775"
-   connect l to ground
-   detector dcv , expect 2.775
-   measure 2.775*1.1,2.775*0.9
-end subtest
-
-subtest "V_VGA_1V8"
-   disconnect all
-   connect i to nodes"V_VGA_1V8"
+   connect i to nodes"VDDIO_SYS"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "SEC_1V25"
+subtest "AVDD_PLLU_D"
    disconnect all
-   connect i to nodes"SEC_1V25"
+   connect i to nodes"AVDD_PLLU_D"
    connect l to ground
-   detector dcv , expect 1.25
-   measure 1.25*1.1,1.25*0.9
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
 end subtest
 
-subtest "VRTC"
+subtest "AVDD_PLLM"
    disconnect all
-   connect i to nodes"VRTC"
+   connect i to nodes"AVDD_PLLM"
    connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
 end subtest
 
-subtest "1V25"
+subtest "AVDD_PLLX"
    disconnect all
-   connect i to nodes"1V25"
+   connect i to nodes"AVDD_PLLX"
    connect l to ground
-   detector dcv , expect 1.25
-   measure 1.25*1.1,1.25*0.9
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
 end subtest
 
-subtest "VDDA_3V3"
+subtest "AVDD_PLLA_P_C"
    disconnect all
-   connect i to nodes"VDDA_3V3"
+   connect i to nodes"AVDD_PLLA_P_C"
    connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
 end subtest
 
-subtest "VCAM_2V775"
+subtest "+3VSUS"
    disconnect all
-   connect i to nodes"VCAM_2V775"
-   connect l to ground
-   detector dcv , expect 2.775
-   measure 2.775*1.1,2.775*0.9
-end subtest
-
-subtest "V_VGA_2V5"
-   disconnect all
-   connect i to nodes"V_VGA_2V5"
-   connect l to ground
-   detector dcv , expect 2.5
-   measure 2.5*1.1,2.5*0.9
-end subtest
-
-subtest "3D3V_AUX"
-   disconnect all
-   connect i to nodes"3D3V_AUX"
+   connect i to nodes"+3VSUS"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "DC_PWR_1"
+subtest "VDD_3V3_GMI"
    disconnect all
-   connect i to nodes"DC_PWR_1"
+   connect i to nodes"VDD_3V3_GMI"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "+1_35V"
+   disconnect all
+   connect i to nodes"+1_35V"
+   connect l to ground
+   detector dcv , expect 1.35
+   measure 1.35*1.1,1.35*0.9
+end subtest
+
+subtest "+1_35V_DDR"
+   disconnect all
+   connect i to nodes"+1_35V_DDR"
+   connect l to ground
+   detector dcv , expect 1.35
+   measure 1.35*1.1,1.35*0.9
+end subtest
+
+subtest "PMU_LDO8"
+   disconnect all
+   connect i to nodes"PMU_LDO8"
+   connect l to ground
+   detector dcv , expect 1
+   measure 1*1.1,1*0.9
+end subtest
+
+subtest "VDD_DDR_HS"
+   disconnect all
+   connect i to nodes"VDD_DDR_HS"
+   connect l to ground
+   detector dcv , expect 1
+   measure 1*1.1,1*0.9
+end subtest
+
+subtest "VDD_DDR_RX"
+   disconnect all
+   connect i to nodes"VDD_DDR_RX"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDDIO_DDR"
+   disconnect all
+   connect i to nodes"VDDIO_DDR"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "PMU_LDO6"
+   disconnect all
+   connect i to nodes"PMU_LDO6"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "AVDD_DSI_CSI"
+   disconnect all
+   connect i to nodes"AVDD_DSI_CSI"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDDIO_CAM_T30S"
+   disconnect all
+   connect i to nodes"VDDIO_CAM_T30S"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_LCD"
+   disconnect all
+   connect i to nodes"VDDIO_LCD"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "AVDD_HDMI"
+   disconnect all
+   connect i to nodes"AVDD_HDMI"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_HDMI_CEC"
+   disconnect all
+   connect i to nodes"VDD_HDMI_CEC"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "AVDD_HDMI_PLL"
+   disconnect all
+   connect i to nodes"AVDD_HDMI_PLL"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_BB"
+   disconnect all
+   connect i to nodes"VDDIO_BB"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_UART"
+   disconnect all
+   connect i to nodes"VDDIO_UART"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDD_IO_AUDIO"
+   disconnect all
+   connect i to nodes"VDD_IO_AUDIO"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "AVDD_USB"
+   disconnect all
+   connect i to nodes"AVDD_USB"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "AVDD_USB_PLL"
+   disconnect all
+   connect i to nodes"AVDD_USB_PLL"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_SDMMC4"
+   disconnect all
+   connect i to nodes"VDDIO_SDMMC4"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "PMU_LDO3"
+   disconnect all
+   connect i to nodes"PMU_LDO3"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_SDMMC1"
+   disconnect all
+   connect i to nodes"VDDIO_SDMMC1"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_SDMMC3"
+   disconnect all
+   connect i to nodes"VDDIO_SDMMC3"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_PEX_CTL"
+   disconnect all
+   connect i to nodes"VDDIO_PEX_CTL"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDDIO_VI"
+   disconnect all
+   connect i to nodes"VDDIO_VI"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDQ_DDR3L"
+   disconnect all
+   connect i to nodes"VDDQ_DDR3L"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_DDR3L"
+   disconnect all
+   connect i to nodes"VDD_DDR3L"
+   connect l to ground
+   detector dcv , expect 1.2
+   measure 1.2*1.1,1.2*0.9
+end subtest
+
+subtest "VDD_PNL"
+   disconnect all
+   connect i to nodes"VDD_PNL"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "AC_BAT_SYS"
+   disconnect all
+   connect i to nodes"AC_BAT_SYS"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "PMU_LDO2"
+   disconnect all
+   connect i to nodes"PMU_LDO2"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_SD_S"
+   disconnect all
+   connect i to nodes"VDD_SD_S"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDDIO_HSMMC"
+   disconnect all
+   connect i to nodes"VDDIO_HSMMC"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VCORE_eMMC_S"
+   disconnect all
+   connect i to nodes"VCORE_EMMC_S"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "PMU_LDO1"
+   disconnect all
+   connect i to nodes"PMU_LDO1"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VREG_GSEN"
+   disconnect all
+   connect i to nodes"VREG_GSEN"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDDIO_GSEN"
+   disconnect all
+   connect i to nodes"VDDIO_GSEN"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDD_GYRO"
+   disconnect all
+   connect i to nodes"VDD_GYRO"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDDIO_GYRO"
+   disconnect all
+   connect i to nodes"VDDIO_GYRO"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "AVDD_ECOM"
+   disconnect all
+   connect i to nodes"AVDD_ECOM"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "DVDD_ECOM"
+   disconnect all
+   connect i to nodes"DVDD_ECOM"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "+3VA_ECSPI"
+   disconnect all
+   connect i to nodes"+3VA_ECSPI"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "+3VA_EC"
+   disconnect all
+   connect i to nodes"+3VA_EC"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "BAT"
+   disconnect all
+   connect i to nodes"BAT"
    connect l to ground
    detector dcv , expect 5
    measure 5*1.1,5*0.9
 end subtest
 
-subtest "V_LCD_3V3"
+subtest "DOCK_SYS"
    disconnect all
-   connect i to nodes"V_LCD_3V3"
+   connect i to nodes"DOCK_SYS"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "LCD_LED_PWR"
+subtest "CHG_ACP_10"
    disconnect all
-   connect i to nodes"LCD_LED_PWR"
+   connect i to nodes"CHG_ACP_10"
    connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "VIN"
+subtest "VDD_5V0_SYS"
    disconnect all
-   connect i to nodes"VIN"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "USB_AC_IN"
-   disconnect all
-   connect i to nodes"USB_AC_IN"
+   connect i to nodes"VDD_5V0_SYS"
    connect l to ground
    detector dcv , expect 5
    measure 5*1.1,5*0.9
 end subtest
 
-subtest "VCODEC_1D8"
+subtest "VCC_TCH"
    disconnect all
-   connect i to nodes"VCODEC_1D8"
+   connect i to nodes"VCC_TCH"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "+3V_PAL"
+   disconnect all
+   connect i to nodes"+3V_PAL"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_CELL_LCL"
+   disconnect all
+   connect i to nodes"VDD_CELL_LCL"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "AVDD_CAM1"
+   disconnect all
+   connect i to nodes"AVDD_CAM1"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "AVDD_VCM"
+   disconnect all
+   connect i to nodes"AVDD_VCM"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_1V8_CDC"
+   disconnect all
+   connect i to nodes"VDD_1V8_CDC"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "MICRO_BIAS"
+subtest "SPKVDD_CDC"
    disconnect all
-   connect i to nodes"MICRO_BIAS"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "VCODEC_3V3"
-   disconnect all
-   connect i to nodes"VCODEC_3V3"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "AVCODEC_3V3"
-   disconnect all
-   connect i to nodes"AVCODEC_3V3"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "VSAMP_5V"
-   disconnect all
-   connect i to nodes"VSAMP_5V"
+   connect i to nodes"SPKVDD_CDC"
    connect l to ground
    detector dcv , expect 5
    measure 5*1.1,5*0.9
 end subtest
 
-subtest "VSAMP_3D3V"
+subtest "DCVDD_CDC"
    disconnect all
-   connect i to nodes"VSAMP_3D3V"
+   connect i to nodes"DCVDD_CDC"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "NVDD"
+subtest "VDD_3V3_CDC"
    disconnect all
-   connect i to nodes"NVDD"
+   connect i to nodes"VDD_3V3_CDC"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "V_EGSEN_3V3"
+subtest "DBVDD_CDC"
    disconnect all
-   connect i to nodes"V_EGSEN_3V3"
+   connect i to nodes"DBVDD_CDC"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "V_LSEN_3V3"
+subtest "CPVDD_CDC"
    disconnect all
-   connect i to nodes"V_LSEN_3V3"
+   connect i to nodes"CPVDD_CDC"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "V_SD_3V3"
+subtest "AVDD_CDC"
    disconnect all
-   connect i to nodes"V_SD_3V3"
+   connect i to nodes"AVDD_CDC"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "TP_3D3V"
+subtest "+1_8V_DSP"
    disconnect all
-   connect i to nodes"TP_3D3V"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "TP_1D8V"
-   disconnect all
-   connect i to nodes"TP_1D8V"
+   connect i to nodes"+1_8V_DSP"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
 end subtest
 
-subtest "RF_VIN_LDO"
+subtest "WiFi_BT_VDDIO_1V8"
    disconnect all
-   connect i to nodes"RF_VIN_LDO"
+   connect i to nodes"WIFI_BT_VDDIO_1V8"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "RF_WiFi_PWR"
+subtest "WiFi_BT_VCC_3V3"
    disconnect all
-   connect i to nodes"RF_WIFI_PWR"
+   connect i to nodes"WIFI_BT_VCC_3V3"
    connect l to ground
    detector dcv , expect 3.3
    measure 3.3*1.1,3.3*0.9
 end subtest
 
-subtest "bt+"
+subtest "REG_1V8"
    disconnect all
-   connect i to nodes"BT+"
-   connect l to ground
-   detector dcv , expect 4
-   measure 4*1.1,4*0.9
-end subtest
-
-subtest "VREF_3V3"
-   disconnect all
-   connect i to nodes"VREF_3V3"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "3D7V_PWR"
-   disconnect all
-   connect i to nodes"3D7V_PWR"
-   connect l to ground
-   detector dcv , expect 3.7
-   measure 3.7*1.1,3.7*0.9
-end subtest
-
-subtest "PMIC_BATT_3V7"
-   disconnect all
-   connect i to nodes"PMIC_BATT_3V7"
-   connect l to ground
-   detector dcv , expect 3.7
-   measure 3.7*1.1,3.7*0.9
-end subtest
-
-subtest "VCCBP"
-   disconnect all
-   connect i to nodes"VCCBP"
-   connect l to ground
-   detector dcv , expect 3.7
-   measure 3.7*1.1,3.7*0.9
-end subtest
-
-subtest "HP_PWR3V3"
-   disconnect all
-   connect i to nodes"HP_PWR3V3"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "RF_3D3V"
-   disconnect all
-   connect i to nodes"RF_3D3V"
-   connect l to ground
-   detector dcv , expect 3.3
-   measure 3.3*1.1,3.3*0.9
-end subtest
-
-subtest "VNAND_1V8"
-   disconnect all
-   connect i to nodes"VNAND_1V8"
+   connect i to nodes"REG_1V8"
    connect l to ground
    detector dcv , expect 1.8
    measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "GPS_VDD_IO_1V8"
+   disconnect all
+   connect i to nodes"GPS_VDD_IO_1V8"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "GPS_VDD_BAT_3V3"
+   disconnect all
+   connect i to nodes"GPS_VDD_BAT_3V3"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "+3VA_EC_SW"
+   disconnect all
+   connect i to nodes"+3VA_EC_SW"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDDIO_HDMI_CONN"
+   disconnect all
+   connect i to nodes"VDDIO_HDMI_CONN"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1,5*0.9
+end subtest
+
+subtest "A_D_DOCK_IN"
+   disconnect all
+   connect i to nodes"A_D_DOCK_IN"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1,5*0.9
+end subtest
+
+subtest "VDD_LVDS_30"
+   disconnect all
+   connect i to nodes"VDD_LVDS_30"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_LVDS_F_30"
+   disconnect all
+   connect i to nodes"VDD_LVDS_F_30"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_LVDS_PLL_30"
+   disconnect all
+   connect i to nodes"VDD_LVDS_PLL_30"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "IOVCC_30"
+   disconnect all
+   connect i to nodes"IOVCC_30"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VCC_LCD3V3"
+   disconnect all
+   connect i to nodes"VCC_LCD3V3"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_1V8_GEN_DIO"
+   disconnect all
+   connect i to nodes"VDD_1V8_GEN_DIO"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDD_ALS_DIO"
+   disconnect all
+   connect i to nodes"VDD_ALS_DIO"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDD_ALS"
+   disconnect all
+   connect i to nodes"VDD_ALS"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "VDD_5V0_SBY"
+   disconnect all
+   connect i to nodes"VDD_5V0_SBY"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1,5*0.9
+end subtest
+
+subtest "3VA_VIN"
+   disconnect all
+   connect i to nodes"3VA_VIN"
+   connect l to ground
+   detector dcv , expect 3.3
+   measure 3.3*1.1,3.3*0.9
+end subtest
+
+subtest "VDD_1V8_PMU_VRTC"
+   disconnect all
+   connect i to nodes"VDD_1V8_PMU_VRTC"
+   connect l to ground
+   detector dcv , expect 1.8
+   measure 1.8*1.1,1.8*0.9
+end subtest
+
+subtest "+5VSUS"
+   disconnect all
+   connect i to nodes"+5VSUS"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1,5*0.9
 end subtest
 

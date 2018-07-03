@@ -1,27 +1,62 @@
 !!!!    2    0    1 1274062712  Vc000                                         
 
+!####################################################################
+!CheckPowerNode_2.5
+!Wistron 3B ATE
+!! nonanalog pins 1,2,3,4
+!! source dcv,am3,terminated 5000,ico1,on
+!! auxiliary dcv,am3.5,ico1,on
+!####################################################################
+
 test powered analog
 
-     test "fuck"
-     test "bao"
+     test "LVDS_VREFL"
+     test "LVDS_VREFH"
+     test "SATA_ODD_PRSNT#"
+     test "H_CPUPWRGD"
+     test "PANEL_BLEN"
 
 end test
 
-!=====================================================================
+!====================================================================
 
-subtest "fuck"
+subtest "LVDS_VREFL"
    disconnect all
-   connect i to nodes"FUCK"
+   connect i to nodes"LVDS_VREFL"
    connect l to ground
-   detector dcv , expect 2
-   measure 2*1.1,2*0.9
+   detector dcv , expect 1
+   measure 1*1.1,1*0.9
 end subtest
 
-subtest "bao"
+subtest "LVDS_VREFH"
    disconnect all
-   connect i to nodes"BAO"
+   connect i to nodes"LVDS_VREFH"
    connect l to ground
-   detector dcv , expect 3
-   measure 3*1.1,3*0.9
+   detector dcv , expect 5
+   measure 5*1.1,5*0.9
+end subtest
+
+subtest "SATA_ODD_PRSNT#"
+   disconnect all
+   connect i to nodes"SATA_ODD_PRSNT#"
+   connect l to ground
+   detector dcv , expect 5
+   measure 5*1.1,5*0.9
+end subtest
+
+subtest "H_CPUPWRGD"
+   disconnect all
+   connect i to nodes"H_CPUPWRGD"
+   connect l to ground
+   detector dcv , expect 8
+   measure 8*1.1,8*0.9
+end subtest
+
+subtest "PANEL_BLEN"
+   disconnect all
+   connect i to nodes"PANEL_BLEN"
+   connect l to ground
+   detector dcv , expect 7
+   measure 7*1.1,7*0.9
 end subtest
 
